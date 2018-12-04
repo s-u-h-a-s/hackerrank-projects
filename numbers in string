@@ -1,0 +1,13 @@
+void num(string str,int n,int *a)//string str is string from where numbers have to be extracted and n is number of numbers and a is dummy array where the numbers have to be stored
+{
+int p=0;
+for(int i=0;i<n;i++)
+{
+int l=0;
+while((int)str[p]!=32)
+{l=l*10+(int)str[p]-48;
+p++;
+}
+*(a+i)=l;
+}
+}
